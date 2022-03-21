@@ -1,23 +1,29 @@
-from distutils.log import error
-from tkinter.tix import ExFileSelectBox
-from urllib import response
 
+def num_check(question):
+    valid = False
+    while not valid:
 
-valid = False
-while not valid:
+        error = ("Please enter a number that is more than zero")
 
-    error = ("Please enter a number that is more than zero")
+        try:
 
-    try:
+            response = float(input(question))
+            
+            if response > 0:
+                return response
 
-        response = float(input("Enter a number: "))
+            else:
+                print(error)
+                print()
         
-        if response > 0:
-            valid = True
-
-        else:
+        except ValueError:
             print(error)
-            print()
-    
-    except ValueError:
-        print(error)
+
+
+
+width = num_check("width: ")
+height = num_check("height: ")
+print()
+print("width", width)
+print("height", height)
+print()
