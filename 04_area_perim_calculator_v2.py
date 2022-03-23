@@ -1,4 +1,6 @@
-
+print()
+print("Welcome to the area and perimeter calculator.")
+print()
 
 def num_check(question):
     valid = False
@@ -29,6 +31,8 @@ while keep_going == "":
 
     area = width * height
     perimeter = 2 * (width + height)
+
+    print()
 
     print("perimeter: {} units".format(perimeter))
     print("area: {} squared units".format(area))
