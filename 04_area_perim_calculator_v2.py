@@ -35,7 +35,7 @@ while keep_going == "":
     print()
 
     print("perimeter: {} units".format(perimeter))
-    print("area: {} squared units".format(area))
+    print("area: {:.2f} squared units".format(area))
     print()
 
     keep_going = input("Press <enter> to keep going or any key to quit")
